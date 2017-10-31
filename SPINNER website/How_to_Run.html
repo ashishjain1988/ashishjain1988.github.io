@@ -1,0 +1,105 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<title>How to Run</title>
+<link rel="stylesheet" href="1.css" />
+<link rel="shortcut icon" href="picks/spinner.png">
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<meta name="author" content="coollew - http://www.opendesigns.org/profile/?user=coollew" />
+
+</head>
+<body>
+<div id="outer">      
+<div class="clear"></div>
+<div id="header">		 
+<h1><span id="myspan" class="p"><center>SPINNER Tool</center></span></h1>
+</div>		 
+
+<div id="parent">		 
+<div id="leftcolumn">		 
+<div id="leftmenu"> 
+<ul>
+<li><a href="index.html" tabindex="1">Home</a></li>
+<li><a href="about_us.html" tabindex="2">About Us</a></li>
+<li><a href="download.html" tabindex="3">Download</a></li>
+<li><a href="results_summary.html" tabindex="4">Results Summary</a></li>
+<li><a href="How_to_Run.html" tabindex="5">How to Run</a></li>
+<li><a href="contact.html" tabindex="6">Contact</a></li>
+
+</ul>
+</div>
+<!--<h4>Ads by Loogle</h4>
+<p>
+<a href="#">Lorem..</a>
+ dolor sit amet ligula eget.  
+</p>
+<p>
+<a href="#">ipsum..</a>
+ dolor sit amet Aenean.  
+</p>
+<p>
+<a href="#">dolor..</a>
+ dolor sit amet nascetur.  
+</p>!-->
+</div>
+		 
+<!-- End left Column -->
+
+<!-- begin right Column -->
+
+<div id="rightcolumn">					 
+<h3>How to Run SPINNER</h3>
+
+<p>
+<b>SPINNER</b> stands for Seeded Protein Interaction Network Neighborhood Expansion and Ranking algorithm. This is a java based tool which is used to carry out the analysis of the Protein Interaction Networks. While running Spinner from the command line the user need to give some parameters on the basis of which the analysis is carried out. Out of these options some are optional and some are mandatory. The parameters are listed below.
+<p><br/>
+  
+  <strong>Mandatory Parameters</strong>
+<ul>
+<li><strong>Input Disease related Proteins File (-F)</strong><br/>
+In this parameter the location of the file, which consists of the initial disease related proteins need to be specified. The protein list should be given in a comma separated file. This field is required for the analysis.</li>
+</ul>
+<strong>Optional parameters</strong>
+<ul>
+  <li><strong>Information about the Protein-Protein Interaction (PPI) Strength (-I</strong>)<br/>
+In this parameter, the information about the PPI strength will be given. If the user wants to compress the protein interaction strength than he can provide a compression factor (CFactor) which will compress the protein interaction strength by this factor.<br/>
+New PPI Strength=PPI Strength*CFactor<br/>
+In  case of the creation of the random Network this CFactor is being used to  calculate protein-protein interaction weight. By default, its value is 1 and the user can enter value greater than 0 or equal to 1, where N is the total number of unique proteins in the network.</li>
+<br/>
+<li><strong>Global Network Rank (-N)</strong><br/>
+In this parameter, a user can turn on and off the feature (Global Adjustment), which calculates the Adjusted Ranking Score (Rp) of the protein on the basis of the global rank of the protein in the PPI database. If the user want to use this feature then they need to provide the percentage of the Sub-network size which is used to calculate SFactor base eg –N 100 than, the SFactor base is Sub-Network Size*1. This base is used to calculate the adjusted ranking score.<br/>
+SFactor(Specificity Factor)= (SFactor Base)^(((Adjusted Global Rank-Initial Rank))/N)<br/>
+Adjusted Rp Score= SFactor*Rp Score<br/>
+The user can only enter real numbers as the SFactor base. By default the value of the SFactor base percentage is 100.
+</li>
+<br/>
+<li><strong>Number of Iterations (-R)</strong><br/>
+In this parameter, the user can specify the number of iterations for calculating the ranking score eg. –R 200 for 200 iterations. Currently the range of the iterations is from 2 to 200. By default the number of iteration is 200.</li>
+<br/>
+<li><strong>Protein Expansion Method (-P)</strong><br/>
+In this parameter, the user can specify whether he want to use network neighborhood expansion or not. In this expansion, all the protein interaction pairs which have at least one protein as seed will be taken. For this option, the user need to give 1 as argument for eg. –P 1. Apart  from that a user can only find the interaction between the given proteins with  no expansion. By default, unexpanded network will be generated. In future we will also give option for the two level expansion in which the protein interaction pairs which have at least one protein as seed or the primary interactor of the seed.</li>
+<br/>
+<li><strong>Protein-Protein Interaction Source (-S)</strong><br/>
+In this parameter, the user can specify the PPI source or database. Currently our tool only support STRING database. For that the user needs to specify STRING as the parameter for eg. –S STRING. By default, no database source will be used and the network is being made by taking random protein pairs by using the input proteins. It should also be noted that the random network generation option will only be used with the default protein expansion method otherwise the tool will throw an error.</li>
+<br/>
+<li><strong>Disease Name (-D)</strong><br/>
+In this parameter, user can specify the name of the disease under study. By this name the final resultant file will be generated. By default it is set to be DEFAULT_SPINNER.</li>
+</ul>
+</p>
+<p>
+<strong>Example</strong><br/>
+java  -jar SPINNER.jar -F=BRCA_GENELIST.csv -I=0.8 -N=100 -R=200 -P=1 -S=STRING  -D=&quot;Breast Cancer&quot;</p> 
+</div>
+ <!-- End Right Column -->
+<div class="clear"></div>
+<div id="footer">
+<p></p>	
+</div>
+<!-- End child Columns -->	
+</div>
+<!-- End parent --> 		 		 
+ </div>
+   <!-- End Wrapper -->
+</body>
+</html>
