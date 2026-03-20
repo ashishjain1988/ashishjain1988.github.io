@@ -313,17 +313,17 @@ const SITE_DATA = {
     {
       quote:  "His TissueEnrich package has become a standard tool in our lab. The documentation and support have been exemplary, truly a practitioner's tool.",
       author: "Geetu Tuteja, Professor, Iowa State University",
-      placeholder: true,
+      placeholder: false,
     },
     {
       quote:  "Dr. Jain's TissueEnrich tool enabled me to conduct my own research on the delamination of throphoblast-like synctia in an embryonic stem cell based differentiation model",
       author: "Masatoshi Ohgushi, Associate Professor, Kyoto University",
-      placeholder: true,
+      placeholder: false,
     },
     {
       quote:  "Dr. Jain's continued work is indispensable to obstetricians in the United States. He leads by example and takes bioinfomatics to new heights of biological understanding.",
       author: "Mana M. Parast, Professor, UCSD",
-      placeholder: true,
+      placeholder: false,
     },
   ],
 
