@@ -69,13 +69,13 @@ const SITE_DATA = {
       icon:  "🧬",
       title: "Bulk RNAseq Data Analysis",
       description: "Comprehensive bulk RNA-Seq data analysis, from raw sequencing reads to actionable biological insights, including quality control, differential expression, co-expression networks, and pathway interpretation.",
-      tags:  ["RNA-seq", "WGS/WES", "ChIP-Seq", "GWAS"],
+      tags:  ["RNA-seq", "WGCNA", "PPI", "GSEA"],
     },
     {
       icon:  "🧬",
       title: "Whole Exome and Genome Data Analysis",
       description: "Advanced whole genome and exome sequencing analysis, from raw data processing to accurate variant detection, annotation, and interpretation, enabling meaningful clinical and research insights.",
-      tags:  ["RNA-seq", "WGS/WES", "ChIP-Seq", "GWAS"],
+      tags:  ["WGS/WES", "SNV", "CNV", "GWAS"],
     },
     {
       icon:  "🧬",
