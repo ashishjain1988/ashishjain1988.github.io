@@ -301,6 +301,7 @@ const SITE_DATA = {
     { year: "2019",        title: "Research Excellence Award",                         org: "Graduate College, Iowa State University"              },
     { year: "2015",        title: "MCBIOS Travel Grant",                               org: "MCBIOS-XII Annual Conference"                        },
     { year: "2013",        title: "Employee of the Month",                             org: "Hcentive Private Limited"                            },
+    { year: "2011",        title: "First Prize, Training Project",                     org: "Onmobile Private Limited, Bangalore"                },
     { year: "2010",        title: "Summer Research Fellowship",                        org: "Indian Academy of Science, Bangalore"                },
   ],
 
