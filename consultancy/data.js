@@ -50,8 +50,8 @@ const SITE_DATA = {
     highlights: [
       { icon: "🎓", title: "PhD, Bioinformatics",  detail: "Iowa State University, Bioinformatics and Computational Biology (Minor in Statistics)"},
       { icon: "🏥", title: "Current Role",          detail: "Senior Data Scientist, Merck"         },
-      { icon: "📦", title: "Open Source",           detail: "TissueEnrich, MAFDash, scDown & more on Bioconductor/GitHub" },
-      { icon: "🏆", title: "Recognition",           detail: '"Way to Shine" Award (BCH 2023, 2025), multiple research excellence awards' },
+      { icon: "📦", title: "Open Source",           detail: "TissueEnrich, MAFDash, scDown & more on GitHub" },
+      { icon: "🏆", title: "Recognition",           detail: 'Multiple research excellence awards, Several Employee Awards' },
     ],
   },
 
@@ -62,14 +62,26 @@ const SITE_DATA = {
     {
       icon:  "🔬",
       title: "Single-Cell & Spatial Transcriptomics",
-      description: "End-to-end scRNA-seq and spatial transcriptomics analysis including cell-type annotation, trajectory analysis, cell-cell communication, and multi-sample integration.",
-      tags:  ["scRNA-seq", "Seurat", "Spatial", "CellChat"],
+      description: "End-to-end scRNA-seq (10X Genomics, Smart-Seq2) and spatial transcriptomics (10X Visium/VisiumHD, MERFISH) analysis including quality control, integration, cell-type annotation, trajectory analysis, cell-cell communication, and multi-sample integration.",
+      tags:  ["scRNA-seq", "Seurat", "Spatial", "Monocle3", "CellChat"],
     },
     {
       icon:  "🧬",
-      title: "Bulk NGS Data Analysis",
-      description: "RNA-seq, WGS/WES, ChIP-Seq, DNA methylation, and proteomics analysis with statistical modeling and biological interpretation tailored to your research questions.",
+      title: "Bulk RNAseq Data Analysis",
+      description: "Comprehensive bulk RNA-Seq data analysis, from raw sequencing reads to actionable biological insights, including quality control, differential expression, co-expression networks, and pathway interpretation.",
       tags:  ["RNA-seq", "WGS/WES", "ChIP-Seq", "GWAS"],
+    },
+    {
+      icon:  "🧬",
+      title: "Whole Exome and Genome Data Analysis",
+      description: "Advanced whole genome and exome sequencing analysis, from raw data processing to accurate variant detection, annotation, and interpretation, enabling meaningful clinical and research insights.",
+      tags:  ["RNA-seq", "WGS/WES", "ChIP-Seq", "GWAS"],
+    },
+    {
+      icon:  "🧬",
+      title: "Other Omics Data Analysis",
+      description: "Proteomics, ChIP-Seq, DNA methylation, and other omics data analysis with statistical modeling and biological interpretation tailored to your research questions.",
+      tags:  ["Proteomics","OLINK","ChIP-Seq","DNA Methylation"],
     },
     {
       icon:  "🤖",
@@ -78,22 +90,10 @@ const SITE_DATA = {
       tags:  ["R", "Python", "scikit-learn", "deep learning"],
     },
     {
-      icon:  "⚙️",
-      title: "Pipeline Development & HPC",
-      description: "Design and deployment of automated, reproducible bioinformatics pipelines on HPC clusters and cloud environments (AWS), from raw data to publication-ready results.",
-      tags:  ["Snakemake", "AWS", "HPC", "Bash"],
-    },
-    {
       icon:  "📊",
-      title: "Interactive Data Visualization",
-      description: "Custom R Shiny dashboards and interactive multi-omics visualization tools for exploring and sharing complex genomic datasets with collaborators and clinicians.",
+      title: "Interactive Data Visualization and Tool Development",
+      description: "Custom R Shiny dashboards and interactive multi-omics visualization webtools for exploring and sharing complex genomic datasets with collaborators and clinicians.",
       tags:  ["R Shiny", "ggplot2", "plotly", "VitessceR"],
-    },
-    {
-      icon:  "🧪",
-      title: "R Package & Tool Development",
-      description: "Development of well-documented, Bioconductor-quality R packages and web tools for the community — from concept to publication and ongoing maintenance.",
-      tags:  ["Bioconductor", "R package", "GitHub", "shinyapps"],
     },
   ],
 
@@ -108,12 +108,8 @@ const SITE_DATA = {
       title: "Senior Data Scientist",
       org:   "Merck & Co.",
       bullets: [
-        "Lead bioinformatics support for multiple research groups: NGS analysis, machine learning, and statistical modeling in collaboration with clinicians and biologists.",
-        "Analyzed immune scRNA-seq data from skin inflammatory pain models identifying cell-type-specific transcriptional programs and neuroimmune interactomes (Nature Immunology, 2024).",
-        "Developed automated pipeline to identify compound heterozygous variants (small + structural) from trio WGS data for Nystagmus and Strabismus families.",
-        "Built R Shiny applications, multi-omics visualization tools, and the scDown R package (https://github.com/BCH-RC/scDown).",
-        "Developed and optimized pipelines for scRNA-seq, spatial, Hi-C, WGS/WES, proteomics, and DNA methylation on BCH HPC.",
-        "Led bioinformatics workshops, mentored junior staff and students. Contributed to 10+ peer-reviewed manuscripts.",
+        "Delivering bioinformatics support to neuroscience research groups, including comprehensive analysis of bulk RNA-seq, proteomics, and integrative multi-omics datasets to drive meaningful biological insights.",
+        "Developed interactive HTML dashboards and R Shiny applications to seamlessly share and explore analyzed NGS data with collaborators, enabling intuitive visualization and data-driven insights.",
       ],
     },
     {
@@ -187,7 +183,7 @@ const SITE_DATA = {
   skills: [
     {
       title: "NGS & Multi-Omics Analysis",
-      items: ["scRNA-seq", "Spatial Transcriptomics", "Bulk RNA-seq", "WGS / WES", "ChIP-Seq", "DNA Methylation", "Proteomics", "Hi-C", "GWAS", "Trajectory Analysis", "Cell-Cell Communication"],
+      items: ["scRNA-seq", "Spatial Transcriptomics", "Bulk RNA-seq", "WGS/WES", "ChIP-Seq", "DNA Methylation", "Proteomics", "Hi-C","MOFA", "GWAS", "Trajectory Analysis", "Cell-Cell Communication","WGCNA"],
     },
     {
       title: "Programming",
@@ -195,15 +191,15 @@ const SITE_DATA = {
     },
     {
       title: "Data Visualization",
-      items: ["R Shiny", "ggplot2", "plotly", "VitessceR"],
+      items: ["R Shiny", "ggplot2", "plotly", "VitessceR","CellxGene"],
     },
     {
       title: "Machine Learning & Statistics",
-      items: ["Supervised Learning", "Unsupervised Learning", "Classification", "Clustering", "Regression", "Deep Learning (CNN)", "WGCNA"],
+      items: ["Supervised Learning", "Unsupervised Learning", "Classification", "Clustering", "Regression"],
     },
     {
       title: "Infrastructure & Tools",
-      items: ["HPC (SLURM)", "AWS", "Distributed Computing", "GitHub / GitLab", "Bioconductor", "MySQL", "Oracle"],
+      items: ["HPC (SLURM)", "AWS", "Distributed Computing", "GitHub/GitLab", "MySQL", "Oracle"],
     },
     {
       title: "Leadership",
@@ -262,11 +258,13 @@ const SITE_DATA = {
       linkLabel: "GitHub",
     },
     {
-      year: 2019,
-      title: "Combined analysis of dissimilar promoter accessibility and gene expression profiles identifies tissue-specific genes and actively repressed networks",
-      authors: "Rebekah R Starks, Anilisa Biswas, Ashish Jain, Geetu Tuteja",
-      journal: "Epigenetics & Chromatin",
-      firstAuthor: false,
+      year: 2021,
+      title: "PlacentaCellEnrich: A tool to characterize gene sets using placenta cell-specific gene enrichment analysis",
+      authors: "Ashish Jain, Geetu Tuteja",
+      journal: "Placenta",
+      firstAuthor: true,
+      link: "https://placentacellenrich.gdcb.iastate.edu/",
+      linkLabel: "Webtool",
     },
     {
       year: 2019,
@@ -276,7 +274,7 @@ const SITE_DATA = {
       firstAuthor: false,
     },
     {
-      year: 2019,
+      year: 2018,
       title: "TissueEnrich: Tissue-specific gene enrichment analysis",
       authors: "Ashish Jain, Geetu Tuteja",
       journal: "Bioinformatics",
@@ -313,18 +311,18 @@ const SITE_DATA = {
    * ---------------------------------------------------------- */
   testimonials: [
     {
-      quote:  "Ashish has an exceptional ability to translate complex multi-omics data into clear biological insights. His pipeline development dramatically accelerated our research timeline.",
-      author: "Collaborating PI, Research Institute",
+      quote:  "His TissueEnrich package has become a standard tool in our lab. The documentation and support have been exemplary, truly a practitioner's tool.",
+      author: "Geetu Tuteja, Professor, Iowa State University",
       placeholder: true,
     },
     {
-      quote:  "Working with Ashish on our scRNA-seq project was outstanding. He not only delivered rigorous analysis but also helped our team deeply understand the methodology.",
-      author: "Senior Investigator, Children's Hospital",
+      quote:  "Dr. Jain's TissueEnrich tool enabled me to conduct my own research on the delamination of throphoblast-like synctia in an embryonic stem cell based differentiation model",
+      author: "Masatoshi Ohgushi, Associate Professor, Kyoto University",
       placeholder: true,
     },
     {
-      quote:  "His TissueEnrich package has become a standard tool in our lab. The documentation and support have been exemplary — truly a practitioner's tool.",
-      author: "Academic Researcher, Bioinformatics Community",
+      quote:  "Dr. Jain's continued work is indispensable to obstetricians in the United States. He leads by example and takes bioinfomatics to new heights of biological understanding.",
+      author: "Mana M. Parast, Professor, UCSD",
       placeholder: true,
     },
   ],
@@ -334,9 +332,11 @@ const SITE_DATA = {
    * ---------------------------------------------------------- */
   serviceOptions: [
     "Single-Cell / Spatial Transcriptomics",
+    "RNA-Seq Analysis",
+    "WES/WGS Analysis",
+    "Proteomics",
     "Bulk NGS Analysis",
     "Machine Learning / Statistical Modeling",
-    "Pipeline Development & HPC",
     "R Package / Tool Development",
     "Interactive Data Visualization",
     "Other / General Inquiry",
