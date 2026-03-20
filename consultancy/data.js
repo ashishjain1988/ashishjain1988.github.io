@@ -215,9 +215,9 @@ const SITE_DATA = {
   publications: [
     {
       year: 2025,
-      title: "scDown: A Pipeline for Single-Cell RNA-Seq Downstream Analysis",
-      authors: "Liang Sun, Qianyi Ma, Chunhui Cai, Maryam Labaf, Ashish Jain, et al.",
-      journal: "International Journal of Molecular Sciences",
+      title: "An endothelial SOX18–mevalonate pathway axis enables repurposing of statins for infantile hemangioma",
+      authors: "Annegret Holm, Matthew S Graus,..., Ashish Jain, et al.",
+      journal: "The Journal of Clinical Investigation",
       firstAuthor: false,
     },
     {
